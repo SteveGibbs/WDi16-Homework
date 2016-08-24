@@ -1,0 +1,37 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  text-align: center;
+  background-color: gainsboro;
+  font-size: 20px;
+  font-family: cursive;
+  background-image: url(https://static.pexels.com/photos/7919/pexels-photo.jpg);
+  background-size: 2200px;
+}
+
+nav {
+  padding: 30px;
+  width: 100%;
+  display: block;
+
+}
+
+
+
+@keyframes example {
+ 0% {color: white;}
+ 25% {color: yellow;}
+ 50% {color: orange;}
+ 75% {color: red;}
+ 100% {color: brown;}
+
+}
+
+a {
+  padding: 25px;
+  animation-name: example;
+  color: brown;
+  animation-duration: 3s;
+}

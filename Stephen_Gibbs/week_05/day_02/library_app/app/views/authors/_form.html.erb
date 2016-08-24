@@ -1,0 +1,28 @@
+<h4>this is the partial form</h4>
+
+<%= form_for @author do |a| %>
+
+
+<p>
+<%= a.label :name %>
+<%= a.text_field :name, :required =>true %>
+</p>
+<p>
+<%= a.label :nationality %>
+<%= a.text_field :nationality, :required =>true %>
+</p>
+<p>
+<%= a.label :dob %>
+<%= a.date_field :dob, :required =>true %>
+</p>
+<p>
+<%= a.label :genre %>
+<%= a.text_field :genre, :required =>true %>
+</p>
+<p>
+<%= a.label :image %>
+<%= a.url_field :image, :required =>true %>
+</p>
+
+<%= a.submit %>
+<% end %>

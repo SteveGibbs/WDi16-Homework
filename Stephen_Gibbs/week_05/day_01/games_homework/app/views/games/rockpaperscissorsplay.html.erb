@@ -1,0 +1,16 @@
+<h1>play screen for rock paper scissors</h1>
+
+
+<form action="" method ="GET">
+
+  <input type="text" name="questionthree" placeholder ="choose rock paper or scissors">
+  <input type="submit">
+</form>
+
+<%if @questionthree %>
+<p>You chose - <%= @questionthree %></p>
+<p>AI chose  <%= @randomthree %></p>
+<% end %>
+<%if (@questionthree==@randomthree) %>
+<p>"You won"</p>
+<% end %>

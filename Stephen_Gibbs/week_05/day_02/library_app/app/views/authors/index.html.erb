@@ -1,0 +1,18 @@
+<h2>Authors in the Library</h2>
+
+<ul>
+<%@authors.each do |a| %>
+
+<li>
+<ul>
+<li>Author: <%= link_to(a.name, "/authors/#{a.id}") %></li>
+<li>Nationality: <%= a.nationality %></li>
+<li>Date of Birth: <%= a.dob %></li>
+<li>Genre: <%= a.genre %></li>
+</ul>
+<%= image_tag(a.image) %>
+
+</li>
+
+  <% end %>
+</ul>

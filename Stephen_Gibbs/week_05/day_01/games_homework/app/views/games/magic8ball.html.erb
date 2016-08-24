@@ -1,0 +1,18 @@
+<h2>Welcome to Magic 8 Ball</h2>
+
+<form action="" method="GET">
+
+<input type="text" name ="question" placeholder="enter a question">
+<input type="submit">
+
+</form>
+
+<hr>
+<%if @question %>
+<p>You asked - <%= @question %></p>
+<p>The all knowing 8 ball says  <%= @random %></p>
+<% end %>
+
+<!-- <iframe src="//giphy.com/embed/OkC4FtH6qIgsU?html5=true" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+
+<iframe src="//giphy.com/embed/fMx2vcwKQyyFq" width="480" height="318" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>

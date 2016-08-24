@@ -1,0 +1,28 @@
+<h4>this is the partial form</h4>
+
+<%= form_for @book do |a| %>
+
+
+<p>
+<%= a.label :title %>
+<%= a.text_field :title, :required =>true %>
+</p>
+<p>
+<%= a.label :year %>
+<%= a.date_field :year, :required =>true %>
+</p>
+<p>
+<%= a.label :genre %>
+<%= a.text_field :genre, :required =>true %>
+</p>
+<p>
+<%= a.label :synopsis %>
+<%= a.url_field :synopsis, :required =>true %>
+</p>
+
+<%= a.collection_select(:author_id, Author.all, :id, :name)%>
+</p>
+
+
+<%= a.submit %>
+<% end %>

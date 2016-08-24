@@ -1,3 +1,11 @@
+# a = subway[start_line].length
+# p a
+# b = subway[:nline][1]
+# p b
+# c = subway[:nline].index("Times Square").to_i
+# p c
+
+
 # Activity:
 #
 # Students should create a program that models a simple subway system.
@@ -42,13 +50,6 @@ end_stop2 = "Grand Central"
 
 
 #TEST CODE - TO GET HASH SYNTAX CORRECT
-# a = subway[start_line].length
-# p a
-# b = subway[:nline][1]
-# p b
-# c = subway[:nline].index("Times Square").to_i
-# p c
-
 
 ##use of range can only go forwards so must start with smaller index
 ##use array.reverse in order to reverse order of stations in array
